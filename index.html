@@ -15,119 +15,43 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg" id="mainNav">
-        <div class="container">
-            <a href="https://olivebuilder.com" class="navbar-brand">
-                <img src="assets/logo.svg" alt="Site-logo">
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="28" height="2" rx="1.5" fill="#333333"></rect>
-                    <rect x="10" y="10" width="4" height="2" rx="1" fill="#333333"></rect>
-                    <rect y="10" width="20" height="2" rx="2" fill="#333333"></rect>
-                    <rect y="19" width="28" height="2" rx="1.5" fill="#333333"></rect>
-                </svg>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <div class="text-end">
-                    <button class="btn text-dark d-lg-none py-1 close" onclick="hideNavMenu()">
-                        <i class="bi bi-x-circle"></i>
-                    </button>
-                </div>
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-                    <li class="nav-item dropdown parent_dropdown d-lg-inline-flex d-none">
-                        <a href="#" class="nav-link">Projects</a>
-                        <a class="nav-link drop dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                            data-bs-toggle="dropdown" aria-expanded="false"></a>
-                        <ul class="dropdown-menu parent_menu" aria-labelledby="dropdownMenuLink">
-                            <li class="dropdown">
-                                <a class="dropdown-item" href="#">Kochi</a>
-                                <a class="nav-link drop drop2 dropdown-toggle" href="#" role="button"
-                                    id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                                <ul class="submenu dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                                    <li><a class="dropdown-item" href="#">Kakkanad</a></li>
-                                    <li><a class="dropdown-item" href="#">Edappally</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Kottayam</a></li>
-                            <li><a class="dropdown-item" href="#">Thiruvalla</a></li>
-                            <li><a class="dropdown-item" href="#">Thrissur </a></li>
-                            <li><a class="dropdown-item" href="#">Trivandrum </a></li>
-                            <li><a class="dropdown-item" href="#">Mumbai</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item d-lg-none projects__links" id="projects__links">
-                        <div class="d-flex border-0">
-                            <a href="#" class="nav-link">Projects</a>
-                            <a class="nav-link ac__btn collapsed" id="accordionNav" data-bs-toggle="collapse"
-                                href="#collapseParent" role="button" aria-expanded="false"
-                                aria-controls="collapseParent">
-                                <i class="bi bi-caret-down-fill"></i>
-                            </a>
-                        </div>
-                        <div class="collapse" id="collapseParent">
-                            <div class="card card-body pt-0">
-                                <ul>
-                                    <li>
-                                        <div class="d-flex">
-                                            <a class="nav-link"
-                                                href="https://olivebuilder.com/flat-for-sale-kochi.php">Kochi</a>
-                                            <a class="nav-link ac__btn collapsed" data-bs-toggle="collapse"
-                                                href="#collapseChild" role="button" aria-expanded="false"
-                                                aria-controls="collapseChild">
-                                                <i class="bi bi-caret-down-fill"></i>
-                                            </a>
-                                        </div>
-                                        <div class="collapse" id="collapseChild">
-                                            <div class="card card-body py-2">
-                                                <ul class="">
-                                                    <li><a class="nav-link"
-                                                            href="">Kakkanad</a>
-                                                    </li>
-                                                    <li><a class="nav-link"
-                                                            href="">Edappally</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li><a class="nav-link"
-                                            href="">Kottayam</a></li>
-                                    <li><a class="nav-link"
-                                            href="">Thiruvalla</a>
-                                    </li>
-                                    <li><a class="nav-link"
-                                            href="">Thrissur </a>
-                                    </li>
-                                    <li><a class="nav-link"
-                                            href="">Trivandrum </a>
-                                    </li>
-                                    <li><a class="nav-link"
-                                            href="">Mumbai</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a href="#" class="nav-link">Gallery</a>
-                    </li>
-                    <li class="nav-item"><a href="" class="nav-link">News</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item"><a href="#" class="nav-link">Career</a></li>
-                    <li class="nav-item contact"><a href="#" class="nav-link">Contact
-                            Us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link phone">+91 9020 900 700</a></li>
-
-                </ul>
-            </div>
-
-
+   <nav class="navbar navbar-expand-lg " id="mainNav">
+    <div class="container">
+        <a href="https://olivebuilder.com" class="navbar-brand">
+            <img src="assets/logo.svg" alt="Site-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                        <li><a class="dropdown-item" href="#">Kochi</a></li>
+                        <li><a class="dropdown-item" href="#">Kottayam</a></li>
+                        <li><a class="dropdown-item" href="#">Thiruvalla</a></li>
+                        <li><a class="dropdown-item" href="#">Thrissur</a></li>
+                        <li><a class="dropdown-item" href="#">Trivandrum</a></li>
+                        <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Career</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">+91 9020 900 700</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- BANNER SLIDER -->
 
