@@ -26,8 +26,10 @@ prev.onclick = function(){
 }
 // auto run slider
 let refreshInterval = setInterval(() => {
-    next.click();
-}, 5000)
+        next.click();
+    
+}, 5000);
+
 function showSlider(){
     // remove item active old
     let itemActiveOld = document.querySelector('.slider .list .item.active');
@@ -62,4 +64,80 @@ thumbnails.forEach((thumbnail, index) => {
     })
 })
 
+
 // BANNER SLIDER END
+
+
+// SECTION-PROJECT
+// 1.CARD-SLIDER
+var swiper = new Swiper("#caro-1", {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+    0: {      // For mobile devices
+        slidesPerView: 1,
+        spaceBetween: 10,
+    },
+    768: {      // For small screens (tablets)
+        slidesPerView: 2,
+        spaceBetween: 20,
+    },
+    1024: {     // For larger screens (desktops)
+        slidesPerView: 3,
+        spaceBetween: 30,
+    },
+}
+});
+
+// PROJECT
+document.addEventListener("DOMContentLoaded", function() {
+    const proContainer = document.querySelector('.pro-container');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                proContainer.style.animationPlayState = 'running';
+            }
+        });
+    });
+
+    observer.observe(proContainer);
+});
+
+
+// CONTACT
+document.addEventListener("DOMContentLoaded", function() {
+    const cont_body = document.querySelector('#cont-body');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                cont_body.style.animationPlayState = 'running';
+            }
+        });
+    });
+
+    observer.observe(cont_body);
+});
